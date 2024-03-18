@@ -2,13 +2,14 @@ body {
 font-family: 'roboto';
 background-color: #1F2937;
 margin: 0;
+padding: 0;
 display: flex;
 flex-direction: column;
 min-height: 100vh;
 
 } 
 
-.content {
+.container {
     max-width: 1080px;
     margin: 0 auto;
 }
@@ -16,7 +17,7 @@ min-height: 100vh;
 .header {
     margin-top: 15px;
 }
-.header-container {
+.header_wrapper {
     display: flex;
     justify-content: space-between;
 
@@ -52,13 +53,14 @@ a {
     padding: 75px 0;
 }
 
-.hero-container {
+.hero_wrapper {
     display: flex;
     height: 100%;
     align-items: center;
+    
 }
 
-.hero-container div {
+.hero_wrapper div {
     flex: 1;
 }
 
@@ -89,4 +91,72 @@ a {
 
 p {
     margin: 0;
+}
+
+.card-container {
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    
+    
+    
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: bolder;
+    color: black;
+    text-align: center;
+    padding: 30px 0px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+    max-width: 150px;
+}
+.card-img {
+    box-sizing: border-box;
+    width: 20px;
+    height: 20px;
+    padding: 60px;
+    border: 5px;
+    border-color: #3882f6;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+.testimonials {
+    background-color: #e5e7eb;
+    color: #1F2937;
+}
+
+.testimonials_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    padding: 120px 0;
+    
+}
+
+.quote {
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+    color: #1F2937;
+}
+
+.author {
+    align-self: flex-end;
+    font-size: 24px;
+    font-weight: bold;
 }
